@@ -36,6 +36,14 @@
 					</div>
 
 					<div class="form-group">
+						<label for="ingredients">Ingredients</label> <input
+							type="text" class="form-control" th:field="*{ingredients}"
+							id="ingredients" placeholder="Ingredients"> <span
+							th:if="${#fields.hasErrors('ingredients')}"
+							th:errors="*{ingredients}"></span>
+					</div>
+
+					<div class="form-group">
 						<label for="instructions">Instructions</label> <input
 							type="text" class="form-control" th:field="*{instructions}"
 							id="instructions" placeholder="Instructions"> <span

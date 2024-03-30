@@ -28,7 +28,6 @@
 						<tr>
 							<td><b>#</b></td>
 							<td><b>Title</b></td>
-							<td><b>Instructions</b></td>
 							<td><b>Cooking Time</b></td>
 							<td><b>Difficulty Level</b></td>
 							<td><b>Average Rating</b></td>
@@ -41,7 +40,6 @@
 						<tr th:each="recipe : ${recipes}">
 							<td th:text="${recipe.id}"></td>
 							<td th:text="${recipe.title}"></td>
-							<td th:text="${recipe.instructions}"></td>
 							<td th:text="${recipe.cookingTime}"></td>
 							<td th:text="${recipe.difficultyLevel}"></td>
 							<td th:text="${recipe.averageRating}"></td>

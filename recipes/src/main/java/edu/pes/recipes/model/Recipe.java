@@ -25,21 +25,16 @@ public class Recipe {
 	@NotNull
 	@NotEmpty
 	private String title;
-
-	//@NotNull
-	//@NotEmpty
-	//private List<String> ingredients; 
-
+	@NotNull
+	@NotEmpty
+	private String ingredients; 
 	@NotNull
 	@NotEmpty
 	private String instructions;
 	@NotNull
-	@NotEmpty
 	private int cookingTime;
 	@NotNull
 	@NotEmpty
-	private String difficultyLevel; 
-	@NotNull
-	@NotEmpty
+	private String difficultyLevel;
 	private double averageRating;
 }
